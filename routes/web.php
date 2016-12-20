@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('finca', 'FincaController');
+Route::resource('log', 'LogController');
+Route::resource('tarro', 'TarroController');
+Route::resource('planilla_empacador', 'PlanillaEmpacadorController');
+Route::resource('planilla_supervisor', 'PlanillaSupervisorController');
